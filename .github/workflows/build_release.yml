@@ -114,7 +114,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-        submodules: recursive
+          submodule: recursive
 
       - name: Download all artifacts
         uses: actions/download-artifact@v4
@@ -219,4 +219,5 @@ jobs:
           echo "- armeabi-v7a (armv7-linux-androideabi)" >> $GITHUB_STEP_SUMMARY
           echo "- x86_64 (x86_64-linux-android)" >> $GITHUB_STEP_SUMMARY
           echo "- x86 (i686-linux-android)" >> $GITHUB_STEP_SUMMARY
+
 
